@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+  
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+  
+        th {
+            background-color: #f2f2f2;
+        }
+  
+        #search {
+            width: 50%;
+            padding: 6px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+  
+        #sync {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #sync:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Customer List</h2>
+    <input type="text" id="search" placeholder="Search by First Name, City, Email, or Phone">
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>last Name</th>
+                <th>Street</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="customerList">
+            <!-- customers will be populated here -->
+        </tbody>
+    </table>
+    <button id="sync">Sync</button>
+</body>
+</html>
